@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #1a202c;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+#background {
+    filter: blur(10px);
+}
+
+footer {
+    background-color: #2d3748;
+}
+
+footer p, footer a {
+    color: #e2e8f0;
+}
+
+footer a:hover {
+    color: #63b3ed;
+}

@@ -1,0 +1,16 @@
+---
+import astroLogo from '../assets/astro.svg';
+import background from '../assets/background.svg';
+---
+
+<div id="container" class="relative">
+	<img id="background" src={background.src} alt="Background Image" class="absolute inset-0 w-full h-full object-cover" />
+	<main class="relative z-10 flex flex-col justify-center items-center text-center h-screen text-white p-6">
+		<h1 class="text-4xl font-bold mb-4">¡Bienvenido a mi Portafolio!</h1>
+		<p class="text-xl mb-8">Soy un desarrollador apasionado por crear soluciones innovadoras. Explora mis proyectos y habilidades.</p>
+		<div class="flex gap-6">
+			<a href="#projects" class="px-6 py-3 bg-blue-600 rounded-lg hover:bg-blue-500 transition-colors">Ver Proyectos</a>
+			<a href="#contact" class="px-6 py-3 border-2 border-blue-600 rounded-lg text-blue-600 hover:bg-blue-600 hover:text-white transition-colors">Contactar</a>
+		</div>
+	</main>
+</div>

@@ -1,0 +1,36 @@
+---
+const projects = [
+    { title: 'E-commerce', description: 'Plataforma de comercio electrónico', url: 'https://example.com' },
+    { title: 'Data Analysis', description: 'Sistema de análisis de datos en tiempo real', url: 'https://example.com' },
+];
+---
+
+<section id="proyectos" class="py-20">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8">Mis Proyectos</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {projects.map(project => (
+            <div class="bg-black text-white p-6 rounded-md shadow-md hover:shadow-xl transition-shadow">
+            <h3 class="text-xl font-semibold mb-4">{project.title}</h3>
+            <p>{project.description}</p>
+            <a href={project.url} class="text-gray-400 hover:text-white mt-4 inline-block">Ver más</a>
+        </div>
+        ))}
+        </div>
+    </div>
+</section>
+
+<style>
+    section {
+    background-color: #000;
+    color: #fff;
+    }
+
+    .card {
+        transition: transform 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+</style>

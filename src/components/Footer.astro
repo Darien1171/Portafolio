@@ -1,0 +1,34 @@
+---
+const socialLinks = [
+  { name: 'GitHub', url: 'https://github.com/Darien1171' },
+  { name: 'LinkedIn', url: 'www.linkedin.com/in/darien-santiago-gonzalez-solano-2855aa33a' },
+  { name: 'Twitter', url: 'https://x.com/DarienSantiago4' }
+];
+---
+
+<footer class="bg-black text-white py-8">
+  <div class="container mx-auto text-center">
+    <p>&copy; 2025 Darien. Todos los derechos reservados.</p>
+    <div class="mt-4">
+      {socialLinks.map(link => (
+        <a href={link.url} target="_blank" class="hover:text-gray-400 mx-4">{link.name}</a>
+      ))}
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer {
+    background-color: #000 !important; /* Aseguramos que el fondo sea negro */
+    color: #fff; /* Texto blanco */
+  }
+
+  a {
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  footer a:hover {
+    color: #bbb; /* Color de hover gris claro */
+  }
+</style>

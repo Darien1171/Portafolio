@@ -1,0 +1,24 @@
+---
+const sections = ['Home', 'Proyectos', 'Habilidades', 'Contacto'];
+---
+
+<header class="bg-black text-white py-4">
+    <div class="container mx-auto flex justify-between items-center">
+    <h1 class="text-xl font-bold">Darien SGS</h1>
+    <nav>
+        <ul class="flex gap-6">
+        {sections.map(section => (
+            <li>
+            <a href={`#${section.toLowerCase()}`} class="hover:text-gray-400">{section}</a>
+            </li>
+        ))}
+        </ul>
+    </nav>
+    </div>
+</header>
+
+<style>
+    a {
+    transition: color 0.3s;
+}
+</style>
